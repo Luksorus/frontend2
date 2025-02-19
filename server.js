@@ -19,18 +19,15 @@ const server = http.createServer((req, res) => {
     fs.readFile(filePath, (err, content) => {
         if (err) {
             if (err.code === 'ENOENT') {
-                // Страница не найдена
                 fs.readFile(path.join(__dirname, '404.html'), (err, content) => {
                     res.writeHead(404, { 'Content-Type': 'text/html' });
                     res.end(content, 'utf8');
                 });
             } else {
-                // Ошибка сервера
                 res.writeHead(500);
                 res.end(`Ошибка сервера: ${err.code}`);
             }
         } else {
-            // Успешный ответ
             res.writeHead(200, { 'Content-Type': contentType });
             res.end(content, 'utf8');
         }

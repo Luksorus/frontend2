@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  color: #2ecc71;
+  color: #2ecc71 !important;
 }
 
 .btn-custom {
@@ -20,7 +20,7 @@ h1 {
   transition: background-color 0.3s ease;
 }
 .btn-custom:hover {
-  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+  background-color: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=styles.css.map */

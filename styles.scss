@@ -1,9 +1,9 @@
-﻿// Переменные
+﻿
 $primary-color: #3498db;
 $secondary-color: #2ecc71;
 $font-stack: 'Arial', sans-serif;
 
-// Основные стили
+
 body {
     font-family: $font-stack;
     color: $primary-color;
@@ -17,7 +17,6 @@ h1 {
     color: $secondary-color;
 }
 
-// Стили для кнопки
 .btn-custom {
     background-color: $primary-color;
     color: white;
